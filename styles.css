@@ -173,6 +173,14 @@ header .container {
     display: none;
 }
 
+.mobile-desktop {
+    display: none;
+}
+
+.mobile-tablet {
+    display: none;
+}
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
@@ -187,6 +195,9 @@ header .container {
         gap: 3em;
     }   
 
+    .mobile-tablet {
+        display: block;
+    }
     
 }
 
@@ -219,6 +230,15 @@ header .container {
         display: none;
         
    }
+    .mobile-desktop {
+    display: block;
+   }
+
+   .mobile-tablet {
+    display: none;
+   }
+
+
 
     
 }
