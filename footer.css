@@ -97,9 +97,9 @@ h1 {
 }
 
 .colum-left {
-    display: center;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-start;
     padding: 0rem 2rem;
     margin-top: -150px;
@@ -238,7 +238,7 @@ a:hover {
 
 
 
-label {
+.switch-label {
     width: 50px;
     height: 25px;
     position: relative;
@@ -249,7 +249,7 @@ label {
     box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
-label:after {
+.switch-label:after {
     content: "";
     width: 21px;
     height: 21px;
@@ -262,22 +262,23 @@ label:after {
     transition: 0.3s;
 }
 
-input {
+.switch-input {
     width: 0;
     height: 0;
     visibility: hidden;
 }
 
-input:checked+label {
+.switch-input:checked + .switch-label {
     background: rgb(46, 40, 40);
 }
 
-input:checked+label:after {
+.switch-input:checked + .switch-label:after {
     left: calc(100% - 23px);
     transform: translateX(0);
     background: linear-gradient(180deg, #0f0b0b, #020101);
     transition: 0.3s;
 }
+
 
 .button-switch {
     display: flex;
@@ -694,16 +695,197 @@ height: 1000px;
 }
 
 .quote-icon {
-    position: relative;
+    display: flex;
     right: 425px;
-    top: 80px;
+    margin-top: -290px;
 }
 
 .quote-icon-2 {
-    position: relative;
-    top: 80px;
+    position: flex;
+    margin-top: -290px;
     right: 945px;
 }
+/* Sixth page*/
+.sixth-background {
+    height: 900px;
+}
+
+
+
+.sixth-background {
+    margin-top: 80px;
+}
+
+.the-left-text {
+    margin-left: 60px;
+}
+
+.phone-container {
+    margin-left: -150px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 500px 700px
+    
+}
+
+.phony-p {
+    font-family: "Manrope", sans-serif;
+}
+
+.phone-container p {
+    color: #565973;
+  }
+
+.call-feature {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 10px);
+    width: 170px;
+    height: 140px; 
+    margin-top: 50px;
+    margin-left: -5px;
+    border: 1px solid #E2E5F1;
+  }
+
+  .the-phone-1 span, i {
+    vertical-align: middle; 
+    display: inline-block;
+}
+
+.the-phone-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: -15px;
+    padding: 17px;
+}
+
+  .call-feature-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 10px);
+    width: 170px;
+    height: 140px; 
+    margin-top: -140px;
+    margin-left: 200px;
+  
+    border: 1px solid #E2E5F1;
+  }
+
+  .phone-container span{
+    margin-top: -20px;
+  }
+
+  .phone-p{
+    font-family: "Manrope", sans-serif;
+    font-size: 11px;
+    color: #565973;
+    margin: 10px;
+    margin-left: 1px;
+  }
+
+  .phone-container .fa-arrow-right {
+    margin: 5px;
+    margin-top: -10px;
+ }
+
+  .phones-green{
+    color: #22C55E;
+  }
+  
+  .the-phones i {
+    color: #22C55E;
+  }
+
+  .the-right-side {
+    width: 800px;
+    margin: 60px;
+  }
+
+  .the-right-stuff p{
+    font-family: "Manrope", sans-serif;
+  }
+
+
+
+.the-right-stuff {
+    margin-top: -70px;
+    margin-left: 55px;
+}
+
+  .the-right-side li{
+    width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    width: 100%;
+    margin: 10px;
+    list-style-type: none;
+}
+
+   .the-right-side label {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+     font-size: 17px;
+     cursor: pointer;
+}
+
+
+
+.input-radio[type="radio"] {
+    display: none;
+}
+
+.the-right-side .all-content {
+    padding: 0 10px;
+    line-height: 20px;
+    max-height: 0;
+    transition: max-height 0.5s, padding 0.5s;
+    overflow: hidden;
+    
+}
+
+.input-radio[type="radio"]:checked + label + .all-content {
+    max-height: 300px;
+    padding: 10px 10px 20px;
+}  
+
+.lab-text .circles {
+    display: inline-block;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #e0e6f8;
+    text-align: center;
+    line-height: 30px;
+    align-items: center;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.input-radio[type="radio"]:checked + label .circles i {
+    transform: rotate(180deg);
+}
+
+.input-radio[type="radio"]:checked + label .circles {
+    background-color: #6366F1; 
+}
+
 
 
 
@@ -766,7 +948,7 @@ height: 1000px;
     .colum-left h1 {
         font-size: 44px;
         display: flex;
-        text-align: center;
+        text-align: start;
    }
 
    .colum-left p {
