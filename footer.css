@@ -241,11 +241,10 @@ a:hover {
 }
 
 .chevron-discover {
-    font-size: 30px;
+    font-size: 18px;
     color: rgb(126, 126, 126);
     justify-content: center;
     align-items: center;
-    margin-top: -22px;
 }
 
 .discover-text {
