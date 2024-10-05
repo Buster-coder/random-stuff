@@ -54,7 +54,7 @@ body {
 
 p {
     text-decoration: none;
-    font-family: "manrope, sans-serif";
+    font-family: "Manrope, sans-serif";
     font-style: normal;
     
 }
@@ -103,15 +103,22 @@ h1 {
     align-items: flex-start;
     padding: 0rem 2rem;
     margin-top: -150px;
+    
 }
 
 .colum-left h1 {
      font-size: 34px;
      display: flex;
+     margin-left: -60px;
+     margin-top: -130px;
 }
+
+
 
 .colum-left p {
     color: var(--color-lighter-gray);
+    font-family: "Manrope", sans-serif;
+    margin-left: -60px;
 }
 
 
@@ -179,7 +186,7 @@ a:hover {
 
 .app-store {
     max-width: 300%;
-    width: 90%;
+    width: 220px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -187,7 +194,8 @@ a:hover {
     border-radius: 8px;
     padding: 20px 20px;
     margin: 20px;
-    margin-top: -550px;
+    margin-top: -450px;
+    margin-left: -130px;
     background-color: var(--color-lighter-dark);
     color: var(--color-white)
     
@@ -200,7 +208,7 @@ a:hover {
 
 .google-store {
     max-width: 300%;
-    width: 90%;
+    width: 220px;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -208,32 +216,42 @@ a:hover {
     border-radius: 8px;
     margin: 20px;
     padding: 20px 20px;
-    margin-top: -550px;
+    margin-top: -450px;
     background-color: var(--color-lighter-dark);
     color: var(--color-white)
     
 }
 
-.button-discover {
-    position: relative;
-    right: 278px;
-    bottom: 100px;
-}
-
-#round-button {
-    background-color: #ffffff;
-    color: #020101;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    display: inline-flex;
+.container-discover {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 10px;
+    margin-top: -100px;
 }
 
-.discover {
-    color: #020101;
+.circle-discover{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: -500px;
+}
 
+.chevron-discover {
+    font-size: 30px;
+    color: rgb(126, 126, 126);
+    justify-content: center;
+    align-items: center;
+    margin-top: -22px;
+}
+
+.discover-text {
+    font-family: "Manrope", sans-serif;
+    color: var(--color-lighter-gray);
 }
 
 
@@ -1112,7 +1130,8 @@ height: 1000px;
         height: 600px;
         width: 600px;
         display: flex;
-        margin-top: 100px;
+        margin-top: 1px;
+        margin-left: -1px;
     }
 
     .button-switch .darkmode {
