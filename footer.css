@@ -68,14 +68,13 @@ h1 {
 .hero {
     background-image: linear-gradient(#F1F4FD,#DA46EF22);
     width: 100%;
+    height: 750px;
 }
 
 .hero-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    width: 100%;
-    height:700px;
     padding-left: var(--container-padding);
     padding-right: var(--container-padding);
     margin: 0 auto;
@@ -109,7 +108,7 @@ h1 {
 .colum-left h1 {
      font-size: 34px;
      display: flex;
-     margin-left: -60px;
+     margin-left: -30px;
      margin-top: -130px;
 }
 
@@ -118,7 +117,7 @@ h1 {
 .colum-left p {
     color: var(--color-lighter-gray);
     font-family: "Manrope", sans-serif;
-    margin-left: -60px;
+    margin-left: -30px;
 }
 
 
@@ -194,8 +193,8 @@ a:hover {
     border-radius: 8px;
     padding: 20px 20px;
     margin: 20px;
-    margin-top: -450px;
-    margin-left: -130px;
+    margin-top: -650px;
+    margin-left: -50px;
     background-color: var(--color-lighter-dark);
     color: var(--color-white)
     
@@ -216,7 +215,7 @@ a:hover {
     border-radius: 8px;
     margin: 20px;
     padding: 20px 20px;
-    margin-top: -450px;
+    margin-top: -650px;
     background-color: var(--color-lighter-dark);
     color: var(--color-white)
     
@@ -226,7 +225,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: -100px;
+    margin-top: -200px;
 }
 
 .circle-discover{
@@ -692,13 +691,14 @@ height: 1000px;
 .fifth-background {
     height: 500px;
     background-color: #F3F6FF;
-    
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
 }
 
 .container-5 {
     font-family: "Manrope", sans-serif;
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
     width: 100%;
     margin-top: 20px;
@@ -710,12 +710,12 @@ height: 1000px;
 
 .customers {
     margin-top: -130px;
-    
+    margin-left: -300px;
 }
 
 .customers h2{
     font-size: 40px;
-    margin-left: 300px;
+    margin-left: 500px;
 }
 
 .customer-rating {
@@ -888,7 +888,7 @@ height: 1000px;
 
 .the-right-stuff {
     margin-top: -70px;
-    margin-left: 55px;
+    margin-left: -60px;
 }
 
   .the-right-side li{
@@ -1128,7 +1128,7 @@ height: 1000px;
     }
 
     .mobile-phone img{
-        height: 600px;
+        height: 750px;
         width: 600px;
         display: flex;
         margin-top: 1px;
